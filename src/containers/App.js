@@ -11,7 +11,7 @@ import Particles from "react-tsparticles";
 import Clarifai from 'clarifai'
 
 const clarifaiApp = new Clarifai.App({
-  apiKey: 'd228edac0f8a49b6804587aa5ba87836'
+  apiKey: 'theapikey'
  });
 
 const particlesOptions = {
@@ -151,7 +151,7 @@ class App extends React.Component {
     clarifaiApp.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.inputLink)
     .then(response => {
       if(response){
-        fetch('https://tranquil-bayou-22562.herokuapp.com/image',{
+        fetch('server/image',{
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
