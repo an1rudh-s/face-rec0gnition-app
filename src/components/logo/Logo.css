@@ -1,0 +1,12 @@
+.tilt {
+    background: linear-gradient(to right, rgb(255, 5, 201), rgb(29, 221, 199));
+}
+
+.rotateMe {
+    animation: rotate infinite 4s linear;
+}
+
+@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
