@@ -1,2 +1,2 @@
 # face-rec0gnition-app
-You can check the app [here!](https://face-rec0gnition-app.herokuapp.com/)
+You can check the app [here!](https://face-recognition-app.herokuapp.com/)
